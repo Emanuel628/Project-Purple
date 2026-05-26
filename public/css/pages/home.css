@@ -8,8 +8,17 @@
     var(--bg-app);
 }
 
+body.force-desktop {
+  overflow-x: auto;
+}
+
 body.force-desktop .home-shell {
+  min-width: 1180px;
   grid-template-columns: 76px minmax(0, 1fr) !important;
+}
+
+body.force-desktop .page-content {
+  min-width: 1104px;
 }
 
 .side-rail {
@@ -288,6 +297,7 @@ body.force-desktop .home-shell {
   body.force-desktop .home-shell { grid-template-columns: 76px minmax(0, 1fr) !important; }
   body.force-desktop .side-rail { display: grid !important; }
   body.force-desktop .topbar { grid-template-columns: minmax(120px, 220px) minmax(280px, 1fr) minmax(220px, auto) !important; }
+  body.force-desktop .hero-feature { grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.78fr) !important; }
   body.force-desktop .home-dashboard-grid { grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.75fr) !important; }
   body.force-desktop .compact-video-grid,
   body.force-desktop .creator-row-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
