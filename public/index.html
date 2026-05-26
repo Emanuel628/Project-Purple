@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Project Purple home feed." />
     <title>VeuMe • Home</title>
-    <link rel="stylesheet" href="./css/app.css?v=20260526-9" />
+    <link rel="stylesheet" href="./css/app.css?v=20260526-11" />
   </head>
   <body>
     <div class="app-shell home-shell">
@@ -35,6 +35,24 @@
         </header>
 
         <main class="page-content home-page">
+          <section class="shell-map card card-pad" aria-label="Project Purple page links">
+            <div>
+              <p class="page-kicker">App Shell</p>
+              <h2 class="section-title">Phase 1 pages</h2>
+            </div>
+            <nav class="shell-map-links" aria-label="Phase 1 page map">
+              <a href="./index.html">Home</a>
+              <a href="./html/watch.html">Watch</a>
+              <a href="./html/creator.html">Creator</a>
+              <a href="./html/discover.html">Discover</a>
+              <a href="./html/collections.html">Collections</a>
+              <a href="./html/vault.html">Vault</a>
+              <a href="./html/studio.html">Studio</a>
+              <a href="./html/upload.html">Upload</a>
+              <a href="./html/settings.html">Settings</a>
+            </nav>
+          </section>
+
           <section class="hero-feature card">
             <div class="hero-sky"></div>
             <div class="hero-copy">
@@ -42,21 +60,21 @@
               <div class="featured-creator-block">
                 <div class="creator-photo"></div>
                 <div>
-                  <h1 class="page-title">Aiden Marlowe <span class="verified-dot">●</span></h1>
+                  <h1 class="page-title"><a href="./html/creator.html">Aiden Marlowe <span class="verified-dot">●</span></a></h1>
                   <p class="page-subtitle">Cinematic storyteller capturing the world in breathtaking detail.</p>
                   <p class="metadata">124K Followers</p>
                 </div>
               </div>
               <div class="hero-actions">
-                <button class="btn btn-primary">♙ Follow</button>
-                <a class="icon-btn" href="./html/creator.html" aria-label="More creator actions">•••</a>
+                <a class="btn btn-primary" href="./html/creator.html">♙ Follow</a>
+                <a class="icon-btn" href="./html/creator.html" aria-label="Open creator page">•••</a>
               </div>
             </div>
             <div class="hero-video-card">
               <a class="premium-thumb hero-thumb landscape-thumb" href="./html/watch.html" aria-label="Watch Chasing Light in the Far North"><button class="play-button">▶</button><span class="duration-badge">12:47</span></a>
               <div class="featured-video-caption">
                 <p class="page-kicker">Featured Video</p>
-                <h2>Chasing Light in the Far North</h2>
+                <h2><a href="./html/watch.html">Chasing Light in the Far North</a></h2>
                 <p>A journey through Iceland's untamed landscapes.</p>
                 <p class="metadata">48K views • 3 days ago</p>
               </div>
@@ -68,28 +86,28 @@
               <section class="home-panel card card-pad">
                 <div class="section-header"><h2 class="section-title">Continue Watching</h2><a class="metadata accent-link" href="./html/history.html">View all</a></div>
                 <div class="video-grid compact-video-grid">
-                  <article class="video-card"><a class="premium-thumb road-thumb" href="./html/watch.html"><span class="duration-badge">14:32</span><span class="progress-fill p72"></span></a><div class="video-meta"><div class="avatar tiny-avatar photo-sara"></div><div><h3 class="video-title">Pacific Drive: Highway 1</h3><p class="metadata">Sara Yoon</p><p class="metadata">72% watched</p></div></div></article>
-                  <article class="video-card"><a class="premium-thumb film-thumb" href="./html/watch.html"><span class="duration-badge">18:09</span><span class="progress-fill p43"></span></a><div class="video-meta"><div class="avatar tiny-avatar photo-luca"></div><div><h3 class="video-title">How I Shoot Documentaries</h3><p class="metadata">Luca Ferretti</p><p class="metadata">43% watched</p></div></div></article>
-                  <article class="video-card"><a class="premium-thumb ocean-thumb" href="./html/watch.html"><span class="duration-badge">10:21</span><span class="progress-fill p60"></span></a><div class="video-meta"><div class="avatar tiny-avatar photo-maya"></div><div><h3 class="video-title">Diving the Great Barrier Reef</h3><p class="metadata">Maya Chen</p><p class="metadata">60% watched</p></div></div></article>
+                  <article class="video-card"><a class="premium-thumb road-thumb" href="./html/watch.html"><span class="duration-badge">14:32</span><span class="progress-fill p72"></span></a><div class="video-meta"><div class="avatar tiny-avatar photo-sara"></div><div><h3 class="video-title"><a href="./html/watch.html">Pacific Drive: Highway 1</a></h3><p class="metadata">Sara Yoon</p><p class="metadata">72% watched</p></div></div></article>
+                  <article class="video-card"><a class="premium-thumb film-thumb" href="./html/watch.html"><span class="duration-badge">18:09</span><span class="progress-fill p43"></span></a><div class="video-meta"><div class="avatar tiny-avatar photo-luca"></div><div><h3 class="video-title"><a href="./html/watch.html">How I Shoot Documentaries</a></h3><p class="metadata">Luca Ferretti</p><p class="metadata">43% watched</p></div></div></article>
+                  <article class="video-card"><a class="premium-thumb ocean-thumb" href="./html/watch.html"><span class="duration-badge">10:21</span><span class="progress-fill p60"></span></a><div class="video-meta"><div class="avatar tiny-avatar photo-maya"></div><div><h3 class="video-title"><a href="./html/watch.html">Diving the Great Barrier Reef</a></h3><p class="metadata">Maya Chen</p><p class="metadata">60% watched</p></div></div></article>
                 </div>
               </section>
 
               <section class="collections-row" aria-label="Collections">
-                <article class="collection-pill travel-pill">✈<span><strong>Travel</strong>128 creators</span></article>
-                <article class="collection-pill film-pill">▣<span><strong>Film</strong>94 creators</span></article>
-                <article class="collection-pill music-pill">♫<span><strong>Music</strong>112 creators</span></article>
-                <article class="collection-pill cars-pill">▱<span><strong>Cars</strong>76 creators</span></article>
-                <article class="collection-pill cooking-pill">♨<span><strong>Cooking</strong>88 creators</span></article>
-                <article class="collection-pill design-pill">✎<span><strong>Design</strong>65 creators</span></article>
+                <a class="collection-pill travel-pill" href="./html/collections.html">✈<span><strong>Travel</strong>128 creators</span></a>
+                <a class="collection-pill film-pill" href="./html/collections.html">▣<span><strong>Film</strong>94 creators</span></a>
+                <a class="collection-pill music-pill" href="./html/collections.html">♫<span><strong>Music</strong>112 creators</span></a>
+                <a class="collection-pill cars-pill" href="./html/collections.html">▱<span><strong>Cars</strong>76 creators</span></a>
+                <a class="collection-pill cooking-pill" href="./html/collections.html">♨<span><strong>Cooking</strong>88 creators</span></a>
+                <a class="collection-pill design-pill" href="./html/collections.html">✎<span><strong>Design</strong>65 creators</span></a>
               </section>
 
               <section class="home-panel card card-pad">
                 <div class="section-header"><h2 class="section-title">Rising Creators</h2><a class="metadata accent-link" href="./html/creators.html">View all</a></div>
                 <div class="creator-row-grid four-up">
-                  <article class="mini-creator"><div class="creator-portrait portrait-one"></div><h3>Mika Tanaka <span class="verified-dot">●</span></h3><p>Travel</p><p>28.5K Followers</p><button class="btn btn-primary">♙ Follow</button></article>
-                  <article class="mini-creator"><div class="creator-portrait portrait-two"></div><h3>Ethan Cole <span class="verified-dot">●</span></h3><p>Film</p><p>19.3K Followers</p><button class="btn btn-primary">♙ Follow</button></article>
-                  <article class="mini-creator"><div class="creator-portrait portrait-three"></div><h3>Aria Beats <span class="verified-dot">●</span></h3><p>Music</p><p>31.2K Followers</p><button class="btn btn-primary">♙ Follow</button></article>
-                  <article class="mini-creator"><div class="creator-portrait portrait-four"></div><h3>Noah Drift <span class="verified-dot">●</span></h3><p>Cars</p><p>22.7K Followers</p><button class="btn btn-primary">♙ Follow</button></article>
+                  <a class="mini-creator" href="./html/creator.html"><div class="creator-portrait portrait-one"></div><h3>Mika Tanaka <span class="verified-dot">●</span></h3><p>Travel</p><p>28.5K Followers</p><span class="btn btn-primary">♙ Follow</span></a>
+                  <a class="mini-creator" href="./html/creator.html"><div class="creator-portrait portrait-two"></div><h3>Ethan Cole <span class="verified-dot">●</span></h3><p>Film</p><p>19.3K Followers</p><span class="btn btn-primary">♙ Follow</span></a>
+                  <a class="mini-creator" href="./html/creator.html"><div class="creator-portrait portrait-three"></div><h3>Aria Beats <span class="verified-dot">●</span></h3><p>Music</p><p>31.2K Followers</p><span class="btn btn-primary">♙ Follow</span></a>
+                  <a class="mini-creator" href="./html/creator.html"><div class="creator-portrait portrait-four"></div><h3>Noah Drift <span class="verified-dot">●</span></h3><p>Cars</p><p>22.7K Followers</p><span class="btn btn-primary">♙ Follow</span></a>
                 </div>
               </section>
             </div>
@@ -98,9 +116,9 @@
               <section class="home-panel card card-pad circle-panel">
                 <div class="section-header"><h2 class="section-title">From Your Circle</h2><a class="metadata accent-link" href="./html/following.html">View all</a></div>
                 <div class="stack-list">
-                  <article class="stack-video"><div class="stack-thumb city-thumb"><span>7:48</span></div><div class="mini-avatar photo-jordy"></div><div><p class="metadata stack-author">Jordy Reyes <span class="verified-dot">●</span></p><h3 class="video-title">Tokyo Nights in 4K</h3><p class="metadata">2K views • 1 hour ago</p></div><button class="quiet-more" type="button">⋮</button></article>
-                  <article class="stack-video"><div class="stack-thumb food-thumb"><span>6:15</span></div><div class="mini-avatar photo-lena"></div><div><p class="metadata stack-author">Lena Bakes <span class="verified-dot">●</span></p><h3 class="video-title">Spring Ricotta Gnocchi</h3><p class="metadata">5.6K views • 4 hours ago</p></div><button class="quiet-more" type="button">⋮</button></article>
-                  <article class="stack-video"><div class="stack-thumb car-thumb"><span>8:22</span></div><div class="mini-avatar photo-throttle"></div><div><p class="metadata stack-author">Throttle Theory <span class="verified-dot">●</span></p><h3 class="video-title">Porsche 911 GT3 Review</h3><p class="metadata">12K views • 1 day ago</p></div><button class="quiet-more" type="button">⋮</button></article>
+                  <a class="stack-video" href="./html/watch.html"><div class="stack-thumb city-thumb"><span>7:48</span></div><div class="mini-avatar photo-jordy"></div><div><p class="metadata stack-author">Jordy Reyes <span class="verified-dot">●</span></p><h3 class="video-title">Tokyo Nights in 4K</h3><p class="metadata">2K views • 1 hour ago</p></div><span class="quiet-more">⋮</span></a>
+                  <a class="stack-video" href="./html/watch.html"><div class="stack-thumb food-thumb"><span>6:15</span></div><div class="mini-avatar photo-lena"></div><div><p class="metadata stack-author">Lena Bakes <span class="verified-dot">●</span></p><h3 class="video-title">Spring Ricotta Gnocchi</h3><p class="metadata">5.6K views • 4 hours ago</p></div><span class="quiet-more">⋮</span></a>
+                  <a class="stack-video" href="./html/watch.html"><div class="stack-thumb car-thumb"><span>8:22</span></div><div class="mini-avatar photo-throttle"></div><div><p class="metadata stack-author">Throttle Theory <span class="verified-dot">●</span></p><h3 class="video-title">Porsche 911 GT3 Review</h3><p class="metadata">12K views • 1 day ago</p></div><span class="quiet-more">⋮</span></a>
                 </div>
               </section>
             </aside>
@@ -109,9 +127,9 @@
           <section class="home-panel card card-pad editor-row-panel">
             <div class="section-header"><h2 class="section-title">Editor Picks</h2><a class="metadata accent-link" href="./html/discover.html">View all</a></div>
             <div class="editor-grid">
-              <article class="featured-pick"><a class="premium-thumb mountain-thumb" href="./html/watch.html"><button class="small-play">▶</button><span class="duration-badge">11:06</span></a><h3 class="video-title">The Dolomites in Autumn</h3><p class="metadata">Giulia Romano <span class="verified-dot">●</span> • 8.1K views</p></article>
-              <article class="featured-pick"><a class="premium-thumb music-thumb" href="./html/watch.html"><button class="small-play">▶</button><span class="duration-badge">9:27</span></a><h3 class="video-title">Live Session: Indigo Lane</h3><p class="metadata">Indigo Lane <span class="verified-dot">●</span> • 6.3K views</p></article>
-              <article class="featured-pick"><a class="premium-thumb design-thumb" href="./html/watch.html"><button class="small-play">▶</button><span class="duration-badge">7:33</span></a><h3 class="video-title">Designing for Tomorrow</h3><p class="metadata">Studio Arc <span class="verified-dot">●</span> • 4.7K views</p></article>
+              <article class="featured-pick"><a class="premium-thumb mountain-thumb" href="./html/watch.html"><button class="small-play">▶</button><span class="duration-badge">11:06</span></a><h3 class="video-title"><a href="./html/watch.html">The Dolomites in Autumn</a></h3><p class="metadata">Giulia Romano <span class="verified-dot">●</span> • 8.1K views</p></article>
+              <article class="featured-pick"><a class="premium-thumb music-thumb" href="./html/watch.html"><button class="small-play">▶</button><span class="duration-badge">9:27</span></a><h3 class="video-title"><a href="./html/watch.html">Live Session: Indigo Lane</a></h3><p class="metadata">Indigo Lane <span class="verified-dot">●</span> • 6.3K views</p></article>
+              <article class="featured-pick"><a class="premium-thumb design-thumb" href="./html/watch.html"><button class="small-play">▶</button><span class="duration-badge">7:33</span></a><h3 class="video-title"><a href="./html/watch.html">Designing for Tomorrow</a></h3><p class="metadata">Studio Arc <span class="verified-dot">●</span> • 4.7K views</p></article>
             </div>
           </section>
 
@@ -119,6 +137,6 @@
         </main>
       </div>
     </div>
-    <script src="./js/view-mode.js?v=20260526-9"></script>
+    <script src="./js/view-mode.js?v=20260526-11"></script>
   </body>
 </html>
