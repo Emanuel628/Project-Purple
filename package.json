@@ -1,0 +1,16 @@
+{
+  "name": "project-purple",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Premium creator-first video platform static shell.",
+  "type": "module",
+  "scripts": {
+    "start": "serve public -s -l tcp://0.0.0.0:$PORT"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
