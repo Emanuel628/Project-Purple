@@ -3,18 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Project Purple is a premium creator-first video platform built around discovery, collections, and cinematic watch experiences." />
-    <title>Project Purple</title>
+    <meta name="description" content="Project Purple home feed." />
+    <title>Project Purple • Home</title>
     <link rel="stylesheet" href="./css/app.css" />
-    <meta http-equiv="refresh" content="0; url=./html/home.html" />
   </head>
   <body>
-    <main class="redirect-page">
-      <section class="empty-state">
-        <p class="page-kicker">Project Purple</p>
-        <h1 class="section-title">Opening the home feed...</h1>
-        <p>If you are not redirected, <a href="./html/home.html">open Project Purple</a>.</p>
-      </section>
-    </main>
+    <div class="app-shell home-shell">
+      <aside class="side-rail">
+        <div class="rail-brand"><span class="rail-logo">V</span></div>
+        <nav class="rail-nav">
+          <a class="rail-link is-active" href="./index.html">Home</a>
+          <a class="rail-link" href="./html/discover.html">Discover</a>
+          <a class="rail-link" href="./html/collections.html">Collections</a>
+          <a class="rail-link" href="./html/following.html">Following</a>
+          <a class="rail-link" href="./html/vault.html">Vault</a>
+          <a class="rail-link" href="./html/studio.html">Studio</a>
+        </nav>
+      </aside>
+
+      <div class="app-main">
+        <header class="topbar">
+          <div class="topbar-left"><a class="brand-wordmark" href="./index.html">VeuMe</a></div>
+          <div class="topbar-center">
+            <label class="search-bar"><input type="search" placeholder="Search creators, videos, collections..." /></label>
+          </div>
+          <div class="topbar-right">
+            <a class="btn btn-secondary" href="./html/upload.html">Upload</a>
+            <a class="avatar" href="./html/profile.html">VM</a>
+          </div>
+        </header>
+
+        <main class="page-content home-page">
+          <section class="hero-feature card">
+            <div class="hero-copy">
+              <p class="page-kicker">Featured Creator</p>
+              <h1 class="page-title">Aiden Marlowe</h1>
+              <p class="page-subtitle">Cinematic storytelling and immersive documentary experiences.</p>
+              <p class="metadata">124K followers • Verified creator</p>
+              <div class="hero-actions">
+                <button class="btn btn-primary">Follow Creator</button>
+                <a class="btn btn-secondary" href="./html/creator.html">View Profile</a>
+              </div>
+            </div>
+            <div class="hero-preview">
+              <div class="player-shell"><button class="play-button">▶</button></div>
+              <div class="featured-video-caption">
+                <p class="page-kicker">Featured Video</p>
+                <h2>Chasing Light in the Far North</h2>
+                <p>A journey through Iceland's untamed landscapes.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="home-dashboard-grid">
+            <div class="dashboard-main">
+              <section class="home-panel card card-pad">
+                <div class="section-header">
+                  <h2 class="section-title">Continue Watching</h2>
+                  <a class="metadata" href="./html/history.html">View all</a>
+                </div>
+                <div class="video-grid compact-video-grid">
+                  <article class="video-card"><div class="video-thumb"><span class="duration-badge">14:32</span></div><div class="video-meta"><div class="avatar">SY</div><div><h3 class="video-title">Pacific Drive: Highway 1</h3><p class="metadata">Sara Yoon • 72% watched</p></div></div></article>
+                  <article class="video-card"><div class="video-thumb"><span class="duration-badge">18:09</span></div><div class="video-meta"><div class="avatar">LF</div><div><h3 class="video-title">How I Shoot Documentaries</h3><p class="metadata">Luca Ferretti • 43% watched</p></div></div></article>
+                  <article class="video-card"><div class="video-thumb"><span class="duration-badge">10:21</span></div><div class="video-meta"><div class="avatar">MC</div><div><h3 class="video-title">Diving the Great Barrier Reef</h3><p class="metadata">Maya Chen • 60% watched</p></div></div></article>
+                </div>
+              </section>
+
+              <section class="home-panel collections-strip">
+                <article class="collection-pill">Travel<span>128 creators</span></article>
+                <article class="collection-pill">Film<span>94 creators</span></article>
+                <article class="collection-pill">Music<span>112 creators</span></article>
+                <article class="collection-pill">Cars<span>76 creators</span></article>
+                <article class="collection-pill">Cooking<span>88 creators</span></article>
+              </section>
+
+              <section class="home-panel card card-pad">
+                <div class="section-header">
+                  <h2 class="section-title">Rising Creators</h2>
+                  <a class="metadata" href="./html/creators.html">View all</a>
+                </div>
+                <div class="creator-row-grid">
+                  <article class="mini-creator"><div class="avatar avatar-lg">MT</div><h3>Mika Tanaka</h3><p>Travel • 28.5K followers</p><button class="btn btn-primary">Follow</button></article>
+                  <article class="mini-creator"><div class="avatar avatar-lg">EC</div><h3>Ethan Cole</h3><p>Film • 19.3K followers</p><button class="btn btn-primary">Follow</button></article>
+                  <article class="mini-creator"><div class="avatar avatar-lg">AB</div><h3>Aria Beats</h3><p>Music • 31.2K followers</p><button class="btn btn-primary">Follow</button></article>
+                </div>
+              </section>
+            </div>
+
+            <aside class="dashboard-side">
+              <section class="home-panel card card-pad">
+                <div class="section-header"><h2 class="section-title">From Your Circle</h2><a class="metadata" href="./html/following.html">View all</a></div>
+                <div class="stack-list">
+                  <article class="stack-video"><div class="stack-thumb"></div><div><h3 class="video-title">Tokyo Nights in 4K</h3><p class="metadata">Jordy Reyes • 1 hour ago</p></div></article>
+                  <article class="stack-video"><div class="stack-thumb"></div><div><h3 class="video-title">Spring Ricotta Gnocchi</h3><p class="metadata">Lena Bakes • 4 hours ago</p></div></article>
+                  <article class="stack-video"><div class="stack-thumb"></div><div><h3 class="video-title">Porsche 911 GT3 Review</h3><p class="metadata">Throttle Theory • 1 day ago</p></div></article>
+                </div>
+              </section>
+
+              <section class="home-panel card card-pad">
+                <div class="section-header"><h2 class="section-title">Editor Picks</h2><a class="metadata" href="./html/discover.html">View all</a></div>
+                <article class="featured-pick"><div class="video-thumb"><span class="duration-badge">11:06</span></div><h3 class="video-title">The Dolomites in Autumn</h3><p class="metadata">Giulia Romano • 8.1K views</p></article>
+              </section>
+            </aside>
+          </section>
+
+          <footer class="view-mode-footer">
+            <button class="view-mode-toggle" type="button" data-view-mode-toggle>Switch to desktop view</button>
+          </footer>
+        </main>
+      </div>
+    </div>
+    <script src="./js/view-mode.js"></script>
   </body>
 </html>
