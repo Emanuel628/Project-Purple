@@ -1,0 +1,236 @@
+.watch-shell {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 22% 0%, rgba(168, 85, 247, 0.18), transparent 30rem),
+    linear-gradient(135deg, #020207, #07070c 48%, #020207);
+}
+
+.watch-shell > .app-main { padding: 0; }
+.watch-page { display: grid; gap: 16px; padding: 18px 28px 44px; }
+
+.watch-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 390px;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(203, 213, 225, 0.14);
+  background: linear-gradient(180deg, rgba(20,20,31,0.78), rgba(8,8,14,0.72));
+}
+
+.watch-player-shell {
+  min-height: 520px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(203,213,225,.16);
+  background: #030307;
+}
+
+.watch-player-art {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  background:
+    radial-gradient(ellipse at 50% 20%, rgba(216,180,254,.52), transparent 12rem),
+    linear-gradient(160deg, transparent 0 43%, rgba(255,255,255,.18) 43.5% 46%, transparent 46.5% 100%),
+    linear-gradient(18deg, #08080d 0 31%, #1e293b 31.5% 49%, #0f172a 49.5% 100%);
+  box-shadow: inset 0 -90px 110px rgba(0,0,0,.46);
+}
+
+.watch-player-art::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(1px 1px at 18% 22%, rgba(255,255,255,.8), transparent),
+    radial-gradient(1px 1px at 35% 14%, rgba(255,255,255,.6), transparent),
+    radial-gradient(1px 1px at 58% 19%, rgba(255,255,255,.9), transparent),
+    radial-gradient(1px 1px at 74% 16%, rgba(255,255,255,.66), transparent);
+  opacity: .75;
+}
+
+.watch-play-button {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  width: 86px;
+  height: 86px;
+  margin: auto;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 50%;
+  background: rgba(0,0,0,.34);
+  color: white;
+  font-size: 1.35rem;
+  box-shadow: 0 24px 70px rgba(0,0,0,.42), inset 0 1px 0 rgba(255,255,255,.14);
+}
+
+.watch-duration {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2;
+  padding: 5px 8px;
+  border-radius: 7px;
+  background: rgba(0,0,0,.62);
+  color: white;
+  font-weight: 900;
+  font-size: .82rem;
+}
+
+.watch-path {
+  padding: 14px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(13,13,22,.9), rgba(8,8,14,.74));
+}
+
+.watch-path-list { display: grid; gap: 10px; }
+.path-item {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 7px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+}
+.path-item:hover,
+.path-item.is-current {
+  border-color: rgba(168,85,247,.28);
+  background: rgba(168,85,247,.1);
+}
+.path-item h3 { color: var(--text-main); font-size: .88rem; line-height: 1.14; }
+.path-thumb {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid rgba(203,213,225,.14);
+  background: linear-gradient(135deg, #334155, #111827);
+}
+.path-thumb span {
+  position: absolute;
+  right: 6px;
+  bottom: 4px;
+  color: white;
+  font-size: .68rem;
+  font-weight: 900;
+}
+
+.aurora-thumb { background: linear-gradient(135deg, #581c87, #1e293b); }
+.ridge-thumb { background: linear-gradient(135deg, #334155, #020617); }
+.sea-thumb { background: linear-gradient(135deg, #0f766e, #082f49); }
+.city-night-thumb { background: linear-gradient(135deg, #7f1d1d, #172554); }
+
+.watch-info-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 390px;
+  gap: 16px;
+  align-items: start;
+}
+
+.watch-main-details,
+.watch-side-stack { display: grid; gap: 14px; }
+.watch-title {
+  color: var(--text-main);
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.02;
+  letter-spacing: -0.065em;
+  margin: -4px 0 0;
+}
+.watch-stats { margin-top: -8px; }
+
+.creator-dock {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  padding: 16px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(20,20,31,.78), rgba(8,8,14,.74));
+}
+.watch-creator-photo { width: 82px; height: 82px; border-width: 3px; }
+.creator-dock-copy h2 { color: var(--text-main); font-size: 1.25rem; }
+.creator-dock-copy p { max-width: 58ch; }
+.creator-dock-actions { display: flex; gap: 10px; align-items: center; }
+
+.watch-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(20,20,31,.68), rgba(8,8,14,.64));
+}
+.watch-actions button {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid rgba(203,213,225,.14);
+  border-radius: 999px;
+  background: rgba(255,255,255,.035);
+  color: var(--text-main);
+  font-weight: 800;
+}
+
+.description-panel,
+.collection-card,
+.comments-preview,
+.more-from-creator {
+  background: linear-gradient(180deg, rgba(20,20,31,.78), rgba(8,8,14,.72));
+}
+.description-panel p { max-width: 80ch; }
+.chapter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.chapter-row span {
+  padding: 8px 10px;
+  border: 1px solid rgba(203,213,225,.13);
+  border-radius: 999px;
+  background: rgba(255,255,255,.035);
+  color: var(--text-muted);
+  font-weight: 800;
+  font-size: .78rem;
+}
+
+.collection-card { display: grid; gap: 10px; }
+.collection-card h2 { color: var(--text-main); font-size: 1.35rem; letter-spacing: -0.045em; }
+.collection-card .btn { width: fit-content; }
+
+.comments-preview { display: grid; gap: 12px; }
+.comment-card {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.035);
+}
+.comment-card p { font-size: .86rem; line-height: 1.35; }
+.comment-card strong { color: var(--text-main); }
+
+.more-from-creator .editor-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+@media (max-width: 1180px) {
+  .watch-hero,
+  .watch-info-grid { grid-template-columns: 1fr; }
+  .watch-path { order: 2; }
+}
+
+@media (max-width: 980px) {
+  .watch-shell { grid-template-columns: 1fr; }
+  .watch-shell .side-rail { display: none; }
+  .watch-player-shell,
+  .watch-player-art { min-height: 320px; }
+  .creator-dock { grid-template-columns: 1fr; }
+  .creator-dock-actions { flex-wrap: wrap; }
+  .more-from-creator .editor-grid { grid-template-columns: 1fr; }
+}
