@@ -1,32 +1,50 @@
-const toggleButton = document.querySelector('[data-view-mode-toggle]');
 const body = document.body;
+
+const footerToggle = document.querySelector('[data-view-mode-toggle]');
+
+const floatingToggle = document.createElement('button');
+floatingToggle.type = 'button';
+floatingToggle.className = 'view-mode-floating-toggle';
+floatingToggle.setAttribute('data-view-mode-floating-toggle', '');
+floatingToggle.setAttribute('aria-label', 'Toggle desktop and mobile view');
+document.body.appendChild(floatingToggle);
+
+const getToggleLabel = () => (
+  body.classList.contains('force-desktop') ? 'Switch to mobile view' : 'Switch to desktop view'
+);
+
+const syncToggleLabels = () => {
+  const label = getToggleLabel();
+
+  if (footerToggle) {
+    footerToggle.textContent = label;
+  }
+
+  floatingToggle.textContent = label;
+};
 
 const applyViewMode = (mode) => {
   if (mode === 'mobile') {
     body.classList.remove('force-desktop');
-
-    if (toggleButton) {
-      toggleButton.textContent = 'Switch to desktop view';
-    }
-
-    return;
+  } else {
+    body.classList.add('force-desktop');
   }
 
-  body.classList.add('force-desktop');
-
-  if (toggleButton) {
-    toggleButton.textContent = 'Switch to mobile view';
-  }
+  syncToggleLabels();
 };
 
 const savedMode = localStorage.getItem('veume-view-mode') || 'desktop';
 applyViewMode(savedMode);
 
-if (toggleButton) {
-  toggleButton.addEventListener('click', () => {
-    const nextMode = body.classList.contains('force-desktop') ? 'mobile' : 'desktop';
+const toggleViewMode = () => {
+  const nextMode = body.classList.contains('force-desktop') ? 'mobile' : 'desktop';
 
-    localStorage.setItem('veume-view-mode', nextMode);
-    applyViewMode(nextMode);
-  });
+  localStorage.setItem('veume-view-mode', nextMode);
+  applyViewMode(nextMode);
+};
+
+if (footerToggle) {
+  footerToggle.addEventListener('click', toggleViewMode);
 }
+
+floatingToggle.addEventListener('click', toggleViewMode);
