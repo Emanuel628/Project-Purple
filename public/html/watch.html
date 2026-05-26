@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Project Purple cinematic watch page shell." />
+    <title>VeuMe • Watch</title>
+    <link rel="stylesheet" href="../css/app.css?v=20260526-9" />
+  </head>
+  <body>
+    <div class="app-shell watch-shell">
+      <aside class="side-rail">
+        <div class="rail-brand"><span class="rail-logo">V</span></div>
+        <nav class="rail-nav" aria-label="Primary navigation">
+          <a class="rail-link" href="../index.html" aria-label="Home">⌂</a>
+          <a class="rail-link" href="./discover.html" aria-label="Discover">⌖</a>
+          <a class="rail-link" href="./collections.html" aria-label="Collections">▱</a>
+          <a class="rail-link" href="./following.html" aria-label="Following">♙</a>
+          <a class="rail-link" href="./vault.html" aria-label="Vault">▰</a>
+          <a class="rail-link" href="./studio.html" aria-label="Studio">⚙</a>
+        </nav>
+      </aside>
+
+      <div class="app-main">
+        <header class="topbar">
+          <div class="topbar-left"><a class="brand-wordmark" href="../index.html">VeuMe</a></div>
+          <div class="topbar-center">
+            <label class="search-bar"><input type="search" placeholder="Search creators, videos, collections..." /></label>
+          </div>
+          <div class="topbar-right">
+            <a class="btn btn-secondary upload-btn" href="./upload.html">↑ Upload</a>
+            <button class="icon-btn notification-dot" type="button">⌁</button>
+            <a class="avatar profile-avatar" href="./profile.html" aria-label="Open profile"></a>
+          </div>
+        </header>
+
+        <main class="page-content watch-page">
+          <section class="watch-hero card">
+            <div class="watch-player-shell">
+              <div class="watch-player-art">
+                <button class="watch-play-button" type="button" aria-label="Play video">▶</button>
+                <span class="watch-duration">12:47</span>
+              </div>
+            </div>
+
+            <aside class="watch-path card" aria-label="Watch Path">
+              <div class="section-header">
+                <h2 class="section-title">Watch Path</h2>
+                <a class="metadata accent-link" href="./discover.html">Tune path</a>
+              </div>
+              <div class="watch-path-list">
+                <article class="path-item is-current">
+                  <div class="path-thumb aurora-thumb"><span>12:47</span></div>
+                  <div>
+                    <p class="metadata">Now watching</p>
+                    <h3>Chasing Light in the Far North</h3>
+                    <p class="metadata">Aiden Marlowe</p>
+                  </div>
+                </article>
+                <article class="path-item">
+                  <div class="path-thumb ridge-thumb"><span>9:18</span></div>
+                  <div>
+                    <h3>Ridge Walk at Midnight</h3>
+                    <p class="metadata">Mika Tanaka • 18K views</p>
+                  </div>
+                </article>
+                <article class="path-item">
+                  <div class="path-thumb sea-thumb"><span>15:02</span></div>
+                  <div>
+                    <h3>Blue Hour Over the Fjords</h3>
+                    <p class="metadata">Luca Ferretti • 31K views</p>
+                  </div>
+                </article>
+                <article class="path-item">
+                  <div class="path-thumb city-night-thumb"><span>7:48</span></div>
+                  <div>
+                    <h3>Tokyo Nights in 4K</h3>
+                    <p class="metadata">Jordy Reyes • 2K views</p>
+                  </div>
+                </article>
+              </div>
+            </aside>
+          </section>
+
+          <section class="watch-info-grid">
+            <article class="watch-main-details">
+              <p class="page-kicker">Featured Video</p>
+              <h1 class="watch-title">Chasing Light in the Far North</h1>
+              <p class="metadata watch-stats">48K views • 3 days ago • Travel / Film</p>
+
+              <div class="creator-dock card">
+                <div class="creator-photo watch-creator-photo"></div>
+                <div class="creator-dock-copy">
+                  <h2>Aiden Marlowe <span class="verified-dot">●</span></h2>
+                  <p>Cinematic storyteller capturing the world in breathtaking detail.</p>
+                  <p class="metadata">124K followers • Iceland collection</p>
+                </div>
+                <div class="creator-dock-actions">
+                  <button class="btn btn-primary" type="button">♙ Follow</button>
+                  <button class="btn btn-secondary" type="button">Save</button>
+                </div>
+              </div>
+
+              <div class="watch-actions card">
+                <button type="button">♡ Like</button>
+                <button type="button">◇ Save to Vault</button>
+                <button type="button">↗ Share</button>
+                <button type="button">＋ Add to Collection</button>
+              </div>
+
+              <article class="description-panel card card-pad">
+                <h2 class="section-title">About this video</h2>
+                <p>
+                  A quiet journey through Iceland's northern landscapes, built around light, weather, and the feeling of being alone in a place that still feels alive.
+                </p>
+                <div class="chapter-row">
+                  <span>0:00 Opening light</span>
+                  <span>3:18 Mountain pass</span>
+                  <span>8:42 Frozen coast</span>
+                  <span>11:20 Final ridge</span>
+                </div>
+              </article>
+            </article>
+
+            <aside class="watch-side-stack">
+              <section class="collection-card card card-pad">
+                <p class="page-kicker">Collection</p>
+                <h2>Arctic Light Stories</h2>
+                <p class="metadata">8 videos • Curated by Aiden Marlowe</p>
+                <button class="btn btn-secondary" type="button">Open Collection</button>
+              </section>
+
+              <section class="comments-preview card card-pad">
+                <div class="section-header">
+                  <h2 class="section-title">Conversation</h2>
+                  <a class="metadata accent-link" href="#comments">View all</a>
+                </div>
+                <article class="comment-card">
+                  <div class="mini-avatar photo-lena"></div>
+                  <p><strong>Lena Bakes</strong> The color in the final ridge shot is unreal.</p>
+                </article>
+                <article class="comment-card">
+                  <div class="mini-avatar photo-jordy"></div>
+                  <p><strong>Jordy Reyes</strong> This is exactly the kind of calm travel film I save for later.</p>
+                </article>
+              </section>
+            </aside>
+          </section>
+
+          <section class="more-from-creator card card-pad">
+            <div class="section-header">
+              <h2 class="section-title">More from Aiden</h2>
+              <a class="metadata accent-link" href="./creator.html">Open creator page</a>
+            </div>
+            <div class="editor-grid">
+              <article class="featured-pick"><div class="premium-thumb mountain-thumb"><button class="small-play">▶</button><span class="duration-badge">11:06</span></div><h3 class="video-title">The Dolomites in Autumn</h3><p class="metadata">8.1K views</p></article>
+              <article class="featured-pick"><div class="premium-thumb ridge-thumb"><button class="small-play">▶</button><span class="duration-badge">9:18</span></div><h3 class="video-title">Ridge Walk at Midnight</h3><p class="metadata">18K views</p></article>
+              <article class="featured-pick"><div class="premium-thumb sea-thumb"><button class="small-play">▶</button><span class="duration-badge">15:02</span></div><h3 class="video-title">Blue Hour Over the Fjords</h3><p class="metadata">31K views</p></article>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
