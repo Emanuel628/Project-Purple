@@ -5,7 +5,7 @@
   "description": "Premium creator-first video platform static shell.",
   "type": "module",
   "scripts": {
-    "start": "serve public -s -l tcp://0.0.0.0:$PORT"
+    "start": "serve public -l tcp://0.0.0.0:$PORT"
   },
   "dependencies": {
     "serve": "^14.2.4"
